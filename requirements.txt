@@ -1,5 +1,8 @@
+streamlit
 langchain
+langchain-community
+chromadb
+huggingface-hub
 transformers
-dotenv
-langchain-huggingface
-pypdf
+torch
+

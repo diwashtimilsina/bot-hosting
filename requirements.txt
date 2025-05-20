@@ -1,0 +1,5 @@
+langchain
+transformers
+dotenv
+langchain-huggingface
+pypdf

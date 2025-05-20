@@ -1,0 +1,29 @@
+# Python virtual environments
+venv/
+env/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs and temporary files
+*.log
+*.sqlite3
+*.db
+*.pdf
+*.pt
+*.ckpt
+*.h5
+
+# Node modules
+node_modules/
+
+# Large folders
+*.deb
+Downloads/
+Android/

@@ -2,7 +2,8 @@ streamlit
 langchain
 langchain-community
 chromadb
-huggingface-hub
 transformers
-torch
+huggingface-hub
+torch==2.0.1
+protobuf==3.20.3
 

@@ -26,8 +26,7 @@ def main():
     pdf_file = st.file_uploader("Upload your PDF", type=["pdf"])
 
     if pdf_file is not None:
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size = 400 , chunk_overlap=50,separators=["\n\n", "\n", ".", "!", "?", " ", ""]
-))
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size = 400 , chunk_overlap=50)
         docs= load_pdf(pdf_file)
         documents = text_splitter.split_documents(docs)
         st.success(f"Loaded {len(documents)} document chunks")
@@ -63,3 +62,4 @@ def main():
 if __name__ == "__main__":
     main()
 
+#other CODE

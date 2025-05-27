@@ -9,7 +9,11 @@ from langchain_community.llms import HuggingFacePipeline
 from langchain.chains import RetrievalQA
 #from langchain.memory import ConversationalBufferMemory
 from transformers import pipeline
+import sys
+import pysqlite3
 
+sys.modules["sqlite3"] = pysqlite3
+sys.modules["sqlite3.dbapi2"] = pysqlite3
 
 #memory = ConversationalBufferMemory()
 

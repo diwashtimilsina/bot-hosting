@@ -1,5 +1,5 @@
-from langchain_community.document_loaders import PyPDFLoader
-from langchain_huggingface import HuggingFaceEmbeddings, HuggingFacePipeline
-from langchain.chains import RetrievalQA
+import sys
+import pysqlite3
 
-# rest of your code...
+sys.modules["sqlite3"] = pysqlite3
+sys.modules["sqlite3.dbapi2"] = pysqlite3

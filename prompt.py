@@ -11,6 +11,12 @@ from langchain.chains import RetrievalQA
 from transformers import pipeline
 import sys
 import pysqlite3
+import asyncio
+
+try:
+    asyncio.get_running_loop()
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
 
 sys.modules["sqlite3"] = pysqlite3
 sys.modules["sqlite3.dbapi2"] = pysqlite3

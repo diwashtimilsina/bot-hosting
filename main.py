@@ -1,5 +1,3 @@
-import sys
-import pysqlite3
-
-sys.modules["sqlite3"] = pysqlite3
-sys.modules["sqlite3.dbapi2"] = pysqlite3
+import transformers
+print(transformers.__version__)
+#print(dir(transformers))  # Check if 'pipeline' exists

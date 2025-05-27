@@ -143,6 +143,7 @@ pyproject_hooks==1.2.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.0
 pytz==2025.2
+pysqlite3-binary==3.41.2
 PyYAML==6.0.2
 pyzmq==26.4.0
 referencing==0.36.2
